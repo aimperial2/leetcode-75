@@ -23,3 +23,7 @@ if __name__ == "__main__":
     test2 = "a good   example"
     result2 = s.reverseWords(test2)
     print(f"Output: '{result2}'")
+
+    test3 = "a  rabbit in a tunnel  "
+    result3 = s.reverseWords(test3)
+    print(f"Output: '{result3}'")
