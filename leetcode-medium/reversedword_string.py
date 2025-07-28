@@ -6,10 +6,20 @@ class Solution(object):
         """
         # reverse the order of the string, get rid of the spaces but have the string reversed
         # it will always have atleast ONE word
-        
-        reversed_str = ""
+        # store string into a list without any extra spaces
+        reverse_lst = s.split()
 
+        # reverse the string/list by splicing it and return reversed string through join
+        return " ".join(reverse_lst[::-1])
+
+if __name__ == "__main__":
+    s = Solution()
         
-        
-        # return reversed string
-        return reversed_str
+    # Test with some examples: hello world & a good example
+    test1 = "  hello   world  "
+    result1 = s.reverseWords(test1)
+    print(f"Output: '{result1}'")
+    
+    test2 = "a good   example"
+    result2 = s.reverseWords(test2)
+    print(f"Output: '{result2}'")
